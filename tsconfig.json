@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/style/*": ["styles/*"]
+    },
     "incremental": true,
     "allowJs": true,
     "allowUnreachableCode": false,

@@ -2,6 +2,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from './index.styles';
+import globalStyles from '@/style/global.styles';
 
 /**
  * Home: A sample page
@@ -12,8 +13,8 @@ const Home: NextPage = (): JSX.Element => (
     <Head>
       <title>Scaffold | Home</title>
     </Head>
-    <div css={styles.container}>
-      <main css={styles.main}>
+    <div css={globalStyles.container}>
+      <main css={globalStyles.main}>
         <h1 css={styles.title}>Welcome to Scaffold</h1>
       </main>
     </div>

@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import type { NextPage } from 'next';
-import { css } from '@emotion/react';
 import Link from 'next/link';
 import Head from 'next/head';
+import globalStyles from '@/style/global.styles';
 
 /**
  * Index: The Landing page of the scaffold
@@ -13,18 +13,14 @@ const Index: NextPage = (): JSX.Element => (
     <Head>
       <title>Scaffold | Landing Page</title>
     </Head>
-    <div
-      css={css`
-        height: 100vh;
-        display: grid;
-        place-items: center;
-      `}
-    >
-      <Link href="/home">
-        <a>
-          <h1>Go to Home Page</h1>
-        </a>
-      </Link>
+    <div css={globalStyles.container}>
+      <main css={globalStyles.main}>
+        <Link href="/home">
+          <a>
+            <h1>Go to Home Page</h1>
+          </a>
+        </Link>
+      </main>
     </div>
   </>
 );
