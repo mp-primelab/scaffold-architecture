@@ -5,7 +5,8 @@
       "@/style/*": ["styles/*"],
       "@/module/*": ["modules/*"],
       "@/component/*": ["components/*"],
-      "@/type/*": ["types/*"]
+      "@/type/*": ["types/*"],
+      "@/store/*": ["stores/*"]
     },
     "incremental": true,
     "allowJs": true,
