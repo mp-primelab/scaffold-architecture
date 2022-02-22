@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app';
 
 /**
- * Home: The Landing page of the web app
+ * MyApp: Custom App component to initialize pages in nextjs
  * @return {JSX.Element} The JSX Code for the Home Page
  */
 function MyApp({ Component, pageProps }: AppProps) {
