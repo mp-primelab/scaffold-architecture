@@ -1,8 +1,4 @@
-export type Movie = {
-  id: string;
-  name: string;
-  thumbnail: string;
-};
+import { Movie } from '@/type/Movie.type';
 
 export const movies: Movie[] = [
   {

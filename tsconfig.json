@@ -4,7 +4,8 @@
     "paths": {
       "@/style/*": ["styles/*"],
       "@/module/*": ["modules/*"],
-      "@/component/*": ["components/*"]
+      "@/component/*": ["components/*"],
+      "@/type/*": ["types/*"]
     },
     "incremental": true,
     "allowJs": true,

@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { Movie } from 'mocks/movies';
+import { Movie } from '@/type/Movie.type';
 import styles from './MovieTile.styles';
 import Image from 'next/image';
 

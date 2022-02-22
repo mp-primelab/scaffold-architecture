@@ -16,6 +16,7 @@ const customJestConfig = {
     '^@/style/(.*)$': '<rootDir>/styles/$1',
     '^@/module/(.*)$': '<rootDir>/modules/$1',
     '^@/component/(.*)$': '<rootDir>/components/$1',
+    '^@/type/(.*)$': '<rootDir>/types/$1',
   },
   setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
 };
