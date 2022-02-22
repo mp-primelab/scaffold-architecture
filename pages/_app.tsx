@@ -1,6 +1,4 @@
-import React from "react";
-import "../styles/globals.css";
-import type { AppProps } from "next/app";
+import type { AppProps } from 'next/app';
 
 /**
  * Home: The Landing page of the web app

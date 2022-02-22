@@ -1,25 +1,22 @@
 module.exports = {
-  'env': {
-    'browser': true,
-    'es2021': true,
+  env: {
+    browser: true,
+    es2021: true,
   },
-  'extends': [
+  extends: [
     'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
     'google',
-    'prettier'
+    'prettier',
   ],
-  'parser': '@typescript-eslint/parser',
-  'parserOptions': {
-    'ecmaFeatures': {
-      'jsx': true,
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
     },
-    'ecmaVersion': 'latest',
-    'sourceType': 'module',
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
-  'plugins': [
-    'react',
-    '@typescript-eslint',
-  ],
-  'rules': {
-  },
+  plugins: ['react', '@typescript-eslint'],
+  rules: {},
 };
