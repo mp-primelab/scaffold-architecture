@@ -2,7 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/style/*": ["styles/*"]
+      "@/style/*": ["styles/*"],
+      "@/module/*": ["modules/*"],
+      "@/component/*": ["components/*"]
     },
     "incremental": true,
     "allowJs": true,
