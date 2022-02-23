@@ -5,7 +5,6 @@ import { MoviesState } from './types';
 
 const initialState = {
   movies,
-  isLoading: false,
 } as MoviesState;
 
 const movieSlice = createSlice({
@@ -14,11 +13,9 @@ const movieSlice = createSlice({
   reducers: {
     loadMovies(state) {
       state.movies = [];
-      state.isLoading = true;
     },
     moviesLoaded(state, action: PayloadAction<Movie[]>) {
       state.movies = action.payload;
-      state.isLoading = false;
     },
   },
 });

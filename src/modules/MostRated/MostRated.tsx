@@ -2,7 +2,8 @@
 import styles from './MostRated.styles';
 import globalStyles from '@/style/global.styles';
 import MovieTile from '@/component/MovieTile/MovieTile';
-import { useSelector } from 'react-redux';
+import { useTopRated } from '@/hook/movies/useTopRated.hook';
+import { useAppSelector } from '@/hook/index';
 import { selectMovies } from '@/store/movies/selector';
 
 /**
@@ -10,7 +11,9 @@ import { selectMovies } from '@/store/movies/selector';
  * @return {JSX.Element} The JSX Code for the Home Page
  */
 const MostRated = (): JSX.Element => {
-  const movies = useSelector(selectMovies);
+  useTopRated();
+  const movies = useAppSelector(selectMovies);
+
   return (
     <div css={globalStyles.container}>
       <main>
