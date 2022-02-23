@@ -2,11 +2,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/style/*": ["styles/*"],
-      "@/module/*": ["modules/*"],
-      "@/component/*": ["components/*"],
-      "@/type/*": ["types/*"],
-      "@/store/*": ["stores/*"]
+      "@/component/*": ["src/components/*"],
+      "@/hook/*": ["src/hooks/*"],
+      "@/mock/*": ["src/mocks/*"],
+      "@/module/*": ["src/modules/*"],
+      "@/store/*": ["src/stores/*"],
+      "@/style/*": ["src/styles/*"],
+      "@/type/*": ["src/types/*"]
     },
     "incremental": true,
     "allowJs": true,

@@ -1,6 +1,6 @@
 import { Movie } from '@/type/Movie.type';
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { movies } from 'mocks/movies';
+import { movies } from '@/mock/movies';
 import { MoviesState } from './types';
 
 const initialState = {
