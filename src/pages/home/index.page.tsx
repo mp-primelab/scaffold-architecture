@@ -1,9 +1,9 @@
 /** @jsxImportSource @emotion/react */
+import MostRated from '@/module/MostRated/MostRated';
+import globalStyles from '@/style/global.styles';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from './index.styles';
-import globalStyles from '@/style/global.styles';
-import MostRated from '@/module/MostRated/MostRated';
 
 /**
  * Home: A sample page
