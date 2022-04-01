@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import MovieTile from '@/component/MovieTile/MovieTile';
 import type { NextPage } from 'next';
 import { useRouter } from 'next/router';

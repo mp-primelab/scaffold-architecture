@@ -1,8 +1,11 @@
-/** @jsxImportSource @emotion/react */
 import { useMovieDetails } from '@/hook/movies/useMovieDetails.hook';
+import { CardActionArea } from '@mui/material';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import styles from './MovieTile.styles';
+import { MovieCard } from './MovieTile.styles';
 
 /**
  * Home: A sample page
@@ -21,17 +24,25 @@ const MovieTile = ({ id }: { id: string }): JSX.Element => {
   }
 
   return (
-    <div css={styles.container} onClick={handleClick}>
-      <div css={styles.thumbnail}>
-        <Image
-          src={movie.thumbnail}
-          alt={movie.name}
-          width={256}
-          height={256}
-        />
-      </div>
-      <div css={styles.title}>{movie.name}</div>
-    </div>
+    <MovieCard>
+      <CardActionArea onClick={handleClick}>
+        <CardMedia>
+          <Image
+            src={movie.thumbnail}
+            alt={movie.name}
+            width={256}
+            height={125}
+            objectFit="cover"
+          />
+        </CardMedia>
+
+        <CardContent>
+          <Typography gutterBottom variant="h6">
+            {movie.name}
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </MovieCard>
   );
 };
 

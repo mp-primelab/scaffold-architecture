@@ -1,9 +1,10 @@
 /** @jsxImportSource @emotion/react */
-import type { NextPage } from 'next';
-import Link from 'next/link';
-import Head from 'next/head';
 import globalStyles from '@/style/global.styles';
 import { css } from '@emotion/react';
+import { Button } from '@mui/material';
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Link from 'next/link';
 
 /**
  * Index: The Landing page of the scaffold
@@ -23,10 +24,8 @@ const Index: NextPage = (): JSX.Element => (
           `,
         ]}
       >
-        <Link href="/home">
-          <a>
-            <h1>Go to Home Page</h1>
-          </a>
+        <Link href="/home" passHref>
+          <Button>Contact Us</Button>
         </Link>
       </main>
     </div>
